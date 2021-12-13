@@ -20,6 +20,14 @@
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_error.js"],
-  "exclude": [".dependabot", ".github", ".husky", ".next", ".vscode", "node_modules", "public"],
+  "exclude": [
+    ".dependabot",
+    ".github",
+    ".husky",
+    ".next",
+    ".vscode",
+    "node_modules",
+    "public"
+  ],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
