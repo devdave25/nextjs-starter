@@ -1,11 +1,8 @@
 import * as React from 'react';
 
+import Button from '@/components/button/Button';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
 
 export default function HomePage() {
   const pingApi = async () => await fetch('/api/ping');
@@ -17,9 +14,9 @@ export default function HomePage() {
 
       <main>
         <section className='bg-white'>
-          <button type='button' onClick={pingApi}>
+          <Button className='mx-2 my-2' onClick={pingApi}>
             Ping server
-          </button>
+          </Button>
         </section>
       </main>
     </Layout>

@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
+import Button from '@/components/button/Button';
 import Layout from '@/components/layout/Layout';
 import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
@@ -25,13 +26,13 @@ export default function ComponentsPage() {
         <section className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-gray-50')}>
           <div
             className={clsx(
-              'layout min-h-screen py-20',
+              'layout py-20 min-h-screen',
               mode === 'dark' ? 'text-white' : 'text-black'
             )}
           >
             <h1>Built-in Components</h1>
             <div className='flex flex-wrap gap-2 mt-8'>
-              <button
+              <Button
                 onClick={toggleMode}
                 className={clsx(
                   mode === 'dark'
@@ -40,7 +41,7 @@ export default function ComponentsPage() {
                 )}
               >
                 Set to {mode === 'dark' ? 'light' : 'dark'}
-              </button>
+              </Button>
             </div>
 
             <ol className='mt-8 space-y-6'>
