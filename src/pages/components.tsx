@@ -25,7 +25,7 @@ export default function ComponentsPage() {
         <section className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-gray-50')}>
           <div
             className={clsx(
-              'layout py-20 min-h-screen',
+              'layout min-h-screen py-20',
               mode === 'dark' ? 'text-white' : 'text-black'
             )}
           >
