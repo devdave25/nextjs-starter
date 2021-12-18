@@ -2,10 +2,10 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
-import Button from '@/components/button/button';
-import Layout from '@/components/layout/layout';
-import NextImage from '@/components/next-image';
-import Seo from '@/components/seo';
+import Button from '@/components/button/Button';
+import Layout from '@/components/layout/Layout';
+import NextImage from '@/components/NextImage';
+import Seo from '@/components/Seo';
 
 export default function ComponentsPage() {
   const [mode, setMode] = React.useState<'dark' | 'light'>('light');

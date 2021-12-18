@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import Button from '@/components/button/button';
-import Layout from '@/components/layout/layout';
-import Seo from '@/components/seo';
+import Button from '@/components/button/Button';
+import Layout from '@/components/layout/Layout';
+import Seo from '@/components/Seo';
 
 export default function HomePage() {
   const [status, setStatus] = useState<string>('');
