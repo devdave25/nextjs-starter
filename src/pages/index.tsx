@@ -1,11 +1,17 @@
-import * as React from 'react';
+import { useState } from 'react';
 
-import Button from '@/components/button/Button';
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
+import Button from '@/components/button/button';
+import Layout from '@/components/layout/layout';
+import Seo from '@/components/seo';
 
 export default function HomePage() {
-  const pingApi = async () => await fetch('/api/ping');
+  const [status, setStatus] = useState<string>('');
+
+  const pingApi = async () => {
+    setStatus('');
+    const result = await fetch('/api/ping');
+    setStatus(result.statusText);
+  };
 
   return (
     <Layout>
@@ -17,6 +23,7 @@ export default function HomePage() {
           <Button className='mx-2 my-2' onClick={pingApi}>
             Ping server
           </Button>
+          <strong>{status}</strong>
         </section>
       </main>
     </Layout>

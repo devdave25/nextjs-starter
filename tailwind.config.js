@@ -4,7 +4,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
