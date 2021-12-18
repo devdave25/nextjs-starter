@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from '@/components/button/Button';
 import Layout from '@/components/layout/Layout';
@@ -6,6 +6,11 @@ import Seo from '@/components/Seo';
 
 export default function HomePage() {
   const [status, setStatus] = useState<string>('');
+
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('Status', status);
+  }, [status]);
 
   const pingApi = async () => {
     setStatus('');
